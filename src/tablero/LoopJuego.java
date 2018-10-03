@@ -25,12 +25,18 @@ private Image gatito;
 private int noGatito=0;   
 private int Contador=0;
 private Image ovni;
+private int []PosicionXGranizo;
+private int []PosicionYGranizo;
+
 public LoopJuego(GraphicsContext gc) {
         this.gc = gc;
+        this.PosicionXGranizo=new int[10];
+        this.PosicionYGranizo=new int[10];
         this.carro = new Carro(0,200);
         this.fondo=new Image("Images/fondo.png");
         this.gatito=new Image("Images/cats.gif");
         this.ovni=new Image("Images/ufo_1.png");
+
 }
 
     public GraphicsContext getGc() {
